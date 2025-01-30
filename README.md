@@ -100,6 +100,33 @@ Step 6 To test connection beteween VMs go to the linux vm on portal azure copy t
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/ec0201e2-d083-4a22-a673-cd16430cf424)
+![image](https://github.com/user-attachments/assets/432d2da0-c475-4afc-bfbf-2f4a39297e9b)
+![image](https://github.com/user-attachments/assets/058dee3c-1df5-4a81-b7eb-730fccb7ca4c)
+![image](https://github.com/user-attachments/assets/04f24712-9527-44eb-ad4f-a4638d78f74e)
+
+
+<p>
+Step 7 Now will will block the ping by adding a firewall, First go into the linux vm on portal azure. click networking setting then inbound security rules and click add at the top. On thr rules go to destination port ranges an put a * inside, then on protocol click ICMPv4 and pirority put 290. When you go back to the see the pings on powershell it will say timed out and thats becasue of the firewall we had placed. In order to allow ICMP traffic again we have to go back into the liunx vm and clear the firewall we place, once that is completed we can go back to powershell on windows vm and see the traffic has statred again. To stop pinging press Control-c.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
