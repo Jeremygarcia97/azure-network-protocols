@@ -30,7 +30,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Fliter for ICMP
 - Test connections between vms
 - Alter Network Security Group Settings
-- Step 4
+- Observer SSH Traffic
 - Step 4
 - Step 4
 <h2>Actions and Observations</h2>
@@ -111,11 +111,13 @@ Step 7 Now will will block the ping by adding a firewall, First go into the linu
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/1421afa5-9fc3-4f7e-b7ec-90c4e5ce3a3c)
+![image](https://github.com/user-attachments/assets/370f95e0-4498-4b2e-8131-8f2ae7c82f80)
+![image](https://github.com/user-attachments/assets/8fad5852-bfd7-4e72-aa5a-7af89cfa4518)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 8 In order to see SSH traffic, you need to go to powershell while still on wireshark. Type ssh labuser@10.0.0.5 on the command line, it will ask you to put a password so type the password that you had put for your liunx vm you create, once that is comppleted it will bring up labuser@linux-vm meaning that you are connected to the linux vm. while on this command prompt, you can type id,hostname and you will see ssh traffic on the backend. When you are done exporing type exit it will closed the connection.  
 </p>
 <br />
 
