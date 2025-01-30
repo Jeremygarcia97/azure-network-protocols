@@ -31,8 +31,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Test connections between vms
 - Alter Network Security Group Settings
 - Observer SSH Traffic
-- Step 4
-- Step 4
+- Observer DHCP,DNS,RDP traffic
 <h2>Actions and Observations</h2>
 
 ![image](https://github.com/user-attachments/assets/f56f2f12-fdc1-4b00-8f48-4e888b743c3c)
@@ -121,26 +120,23 @@ Step 8 In order to see SSH traffic, you need to go to powershell while still on 
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/f324c296-27cb-4a13-9c62-19e7882c689e)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To observed DHCP traffic go to wireshakr anf filter for DHCP, then go to powershell and on the cmd line type ipconfig /renew you might lose connection due to the fact that you are requesting a new IP address after its completed you should have a new IP address and are able to look onm wireshark to see DHCP traffic.
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/a9f2f5eb-de01-47cc-8258-102a05e356db)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For DNS traffic you can type nslookup disney.com on powershell cmd line and filter for dns traffic on wireshark you will see traffic happen on the backend when you typy in the command. .
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/17230b8e-8d6f-42f5-ae0c-a62c80edc049)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Type tcp.port==3389 on wireshark to filter for RDP traffic and once you press enter, what you will see is a constant spam of traiffc because RDP traffic is moving your mouse,typing on a keybord its just basically eveything you do on the computuer. That concludes this project on to the next one!!
 </p>
 <br />
